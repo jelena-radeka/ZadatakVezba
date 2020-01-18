@@ -24,8 +24,8 @@ public class Roba {
 
     }
 
-    public Roba(int id, String naziv, String opis, double tezina) {
-        this.id = id;
+    public Roba( String naziv, String opis, double tezina,Avion avion) {
+
         this.naziv = naziv;
         this.opis = opis;
         this.tezina = tezina;
