@@ -34,7 +34,7 @@ public class Zadatak3IzmenaVrednosti {
         List<Roba> robaZaIzmenu=robaDao.queryForEq(Roba.POLJE_OPIS,"Plasticna stolica");
         for(Roba r:robaZaIzmenu){
             r.setOpis("Drvena stolica");
-            robaDao.update((Roba)robaZaIzmenu);
+            robaDao.update((Roba)r);
 
         }
         List<Roba> izmenjenaRoba= robaDao.queryForAll();

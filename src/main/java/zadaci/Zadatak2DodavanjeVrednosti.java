@@ -9,6 +9,7 @@ import model.Avion;
 import model.Roba;
 
 import java.io.IOException;
+import java.util.List;
 
 public class Zadatak2DodavanjeVrednosti {
 
@@ -50,7 +51,10 @@ public class Zadatak2DodavanjeVrednosti {
             Roba roba5=new Roba("Stolica","Plasticna stolica",2.4,a2);
             robaDao.create(roba5);
 
-
+            List<Roba> izmenjenaRoba= robaDao.queryForAll();
+            for(Roba r:izmenjenaRoba){
+                System.out.println(r);
+            }
 
 
 
